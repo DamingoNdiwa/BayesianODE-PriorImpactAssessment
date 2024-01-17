@@ -5,7 +5,6 @@ import jax.numpy as jnp
 from tensorflow_probability.python.internal.backend.jax.compat import v2 as tf
 import tensorflow_probability.substrates.jax as tfp
 from utils_summary import posterior_summary
-
 from jax.config import config
 config.update("jax_enable_x64", True)
 
