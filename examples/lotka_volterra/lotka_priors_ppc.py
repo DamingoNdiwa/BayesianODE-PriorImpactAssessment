@@ -212,4 +212,3 @@ fig.subplots_adjust(wspace=0.12, hspace=0.05)
 fig.set_figwidth(6.5)
 fig.set_figheight(6.5)
 plt.savefig("./odesppcall.pdf", dpi=1000)
-%
