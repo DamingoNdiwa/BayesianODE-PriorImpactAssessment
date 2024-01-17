@@ -14,6 +14,7 @@ year, data = fetch()
 
 # Run model to get different posteriors for different prior
 # Baseline prior
+
 num_results = 4000
 num_burnin_steps = 1000
 key = 1
