@@ -11,7 +11,7 @@ def posterior_summary(samples):
     sd_sd = round(jnp.std(samples.sigma, axis=0), 3)
 
     data = {
-        '': ['alpha', 'gamma', 'delta', 'beta', 'mu', 'nu', 'sd_mu', 'sd_nu'],
+        '': ['alpha', 'beta', 'delta', 'gamma', 'mu', 'nu', 'sd_mu', 'sd_nu'],
         'Posterior_mean': [
             round(theta[0][0],3),
             round(theta[0][1],3),
