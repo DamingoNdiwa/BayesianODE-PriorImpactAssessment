@@ -13,6 +13,7 @@ tfd = tfp.distributions
 tfb = tfp.bijectors
 
 # Get data from numpyro
+
 _, fetch = load_dataset(LYNXHARE, shuffle=False)
 year, data = fetch()
 
