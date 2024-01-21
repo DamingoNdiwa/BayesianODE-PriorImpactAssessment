@@ -10,7 +10,6 @@ from jax.config import config
 config.update("jax_enable_x64", True)
 from sample_batches import run_refd_prior_multiple_times
 
-
 tfd = tfp.distributions
 tfb = tfp.bijectors
 
