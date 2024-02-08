@@ -82,6 +82,8 @@ refd_prior = dist.sample(num_samples, seed=key)
 
 refd = np.column_stack((refd_prior.theta, refd_prior.z_init, refd_prior.sigma))
 
+# save refd
+jnp.save('./refd', refd, allow_pickle=True)
 # Second prior
 
 
@@ -111,6 +113,7 @@ d1_prior = dist1.sample(num_samples, seed=key)
 # calculation by Ott
 
 d1 = np.column_stack((d1_prior.theta, d1_prior.z_init, d1_prior.sigma))
+jnp.save('./d1', d1, allow_pickle=True)
 
 # third prior
 
@@ -132,6 +135,7 @@ def model():
 
 
 dist2 = tfd.JointDistributionCoroutineAutoBatched(model)
+jnp.save('./d2', d2, allow_pickle=True)
 
 # sample from prior
 
@@ -168,6 +172,7 @@ d3_prior = dist3.sample(num_samples, seed=key)
 # save the prior in the form that can be used for Wasserstein distance
 # calculation by Ott
 d3 = np.column_stack((d3_prior.theta, d3_prior.z_init, d3_prior.sigma))
+jnp.save('./d3', d3, allow_pickle=True)
 
 ###
 # Fifth prior
@@ -197,8 +202,7 @@ d4_prior = dist4.sample(num_samples, seed=key)
 # save the prior in the form that can be used for Wasserstein distance
 # calculation by Ott
 d4 = np.column_stack((d4_prior.theta, d4_prior.z_init, d4_prior.sigma))
-
-
+jnp.save('./d4', d4, allow_pickle=True)
 
 def compute_optimal_transport(a1, a2):
     """Computes the Wasserstein distance between two distributions (a1 and a2)in more than one dimension
