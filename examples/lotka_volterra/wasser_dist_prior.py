@@ -84,8 +84,8 @@ refd = np.column_stack((refd_prior.theta, refd_prior.z_init, refd_prior.sigma))
 
 # save refd
 jnp.save('./refd', refd, allow_pickle=True)
-# Second prior
 
+# Second prior
 
 def model():
     theta = yield tfd.JointDistributionCoroutine.Root(tfd.Sample(tfd.TruncatedNormal(loc=tf.cast([1.0, 0.05, 1.0, 0.05], dtype='float64'),
