@@ -12,24 +12,24 @@ print(f'JAX local devices: {jax.local_devices()}')
 # Run model to get different posteriors for different prior
 # Baseline prior
 
-a = 20#3000
-b = 20#1000
+a1 = 3000
+b = 1000
 
-exref = post_samples(num_results=a, num_burnin_steps=b, key=1, phi=5)
+exref = post_samples(num_results=a1, num_burnin_steps=b, key=1, phi=5)
 
 # Piror1
-ex42 = post_samples(num_results=a, num_burnin_steps=b, key=1, phi=42)
+ex42 = post_samples(num_results=a1, num_burnin_steps=b, key=1, phi=42)
 
 # prior2
-ex1 = post_samples(num_results=a, num_burnin_steps=b, key=1, phi=1)
+ex1 = post_samples(num_results=a1, num_burnin_steps=b, key=1, phi=1)
 
 # prior3
 
-gamma1 = post_samples1(num_results=a, num_burnin_steps=b, key=1, a=16)
+gamma1 = post_samples1(num_results=a1, num_burnin_steps=b, key=1, a=16)
 
 # prior4
 
-ex70 = post_samples(num_results=a, num_burnin_steps=b, key=1, phi=150)
+ex70 = post_samples(num_results=a1, num_burnin_steps=b, key=1, phi=150)
 
 # Get reults in form for ott library
 prefd = np.column_stack((exref.theta, exref.p_reported, exref.alpha))
