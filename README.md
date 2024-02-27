@@ -9,4 +9,6 @@ This folder contains a subfolder called prior_samples and additional scripts. Al
 #### Prior_samples
 The subfolder contains scripts for sampling from prior distributions. Running these scripts on the HPC is preferable as they take longer. OR use the script `sample_batches.py` for batch sampling to reduce execution time.
 
-
+## Scripts
+The script `example_diagnostics.py` demonstrates how to perform Geweke diagnostics to check for model convergence. 
+The script requires uploading posterior samples and specifying the model (SEIR or Lotka-Volterra). Also, `utils_diagnostics.py` has a  function used by `example_diagnostics.py`.
