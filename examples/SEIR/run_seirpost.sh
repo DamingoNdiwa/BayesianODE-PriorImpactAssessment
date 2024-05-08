@@ -1,6 +1,6 @@
 #!/bin/bash -l
 #SBATCH -J seirpos
-#SBATCH --output=seirpos.out
+#SBATCH --output=seirpos1.out
 #SBATCH --mail-user=damian.ndiwago@uni.lu
 #SBATCH --mail-type=END,FAIL
 #SBATCH -N 1
