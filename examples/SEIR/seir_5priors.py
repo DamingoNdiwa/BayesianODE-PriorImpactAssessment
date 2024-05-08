@@ -126,11 +126,11 @@ gs = fig.add_gridspec(
 
 # Define the top subplot spanning both columns
 f3_ax1 = fig.add_subplot(gs[0, 0])
-f3_ax1.plot(mu0, "k-", label=r"$p(\theta_0)$")
-f3_ax1.plot(mu1, "b-", label=r"$p(\theta_1)$")
-f3_ax1.plot(mu2, "r-", label=r"$p(\theta_2)$", alpha=0.5)
-f3_ax1.plot(mu3, "c-", label=r"$p(\theta_3)$")
-f3_ax1.plot(mu4, "y-", label=r"$p(\theta_4)$")
+f3_ax1.plot(mu0, "k-", label=r"$p_0$")
+f3_ax1.plot(mu1, "b-", label=r"$p_1$")
+f3_ax1.plot(mu2, "r-", label=r"$p_2$", alpha=0.5)
+f3_ax1.plot(mu3, "c-", label=r"$p_3$")
+f3_ax1.plot(mu4, "y-", label=r"$p_4$")
 
 f3_ax1.set_xticks([0, 30, 60, 90, 120])
 f3_ax1.set_xticklabels(['29-Feb',
@@ -182,7 +182,7 @@ f3_ax22.legend(
     loc='best',
     fontsize='x-small',
     frameon=True,
-    title=r'$p(\theta_4)$',
+    title=r'$p_4$',
     title_fontsize='small')
 f3_ax22.set_ylim(0, 310)  # Set the maximum y-limit to 250
 f3_ax2 = fig.add_subplot(gs[0, 1], sharey=f3_ax1)
@@ -218,7 +218,7 @@ f3_ax2.legend(
     loc='best',
     fontsize='small',
     frameon=True,
-    title=r'$p(\theta_0)$',
+    title=r'$p_0$',
     title_fontsize='small')
 f3_ax2.set_ylim(0, 310)  # Set the maximum y-limit to 250
 
@@ -255,7 +255,7 @@ f3_ax3.legend(
     loc='best',
     fontsize='small',
     frameon=True,
-    title=r'$p(\theta_1)$',
+    title=r'$p_1$',
     title_fontsize='small')
 f3_ax3.set_ylim(0, 310)  # Set the maximum y-limit to 250
 
@@ -292,7 +292,7 @@ f3_ax4.legend(
     loc='best',
     fontsize='small',
     frameon=True,
-    title=r'$p(\theta_2)$',
+    title=r'$p_2$',
     title_fontsize='small')
 
 f3_ax4.set_ylim(0, 350)  # Set the maximum y-limit to 250
@@ -305,7 +305,7 @@ f3_ax5.plot(
     ms=1.5,
     label="observed",
     alpha=0.5)
-f3_ax5.plot(mu3, "c-", label=r"$p(\theta_2)$", alpha=0.5)
+f3_ax5.plot(mu3, "c-", label=r"$p_2$", alpha=0.5)
 f3_ax5.fill_between(data_plot.date.values[:-1],
                     pi3[0],
                     pi3[1],
@@ -333,7 +333,7 @@ f3_ax5.legend(
     loc='best',
     fontsize='small',
     frameon=True,
-    title=r'$p(\theta_3)$',
+    title=r'$p_3$',
     title_fontsize='small')
 f3_ax5.set_xlabel('Date', fontsize=10, x=1.1)
 fig.set_figwidth(6.2)
@@ -345,11 +345,11 @@ fig.savefig("./ppcseirlux.pdf", dpi=1000)
 fig, axs = plt.subplots(3, 2, sharex=True, sharey=True)
 axs[0, 0].text(-20, 350, r"$\textbf{a}$", fontsize='14')
 axs[0, 0].set_ylim(0, 350)  # Set the maximum y-limit to 250
-axs[0, 0].plot(mu0, "k-", label=r"$p(\theta_0)$")
-axs[0, 0].plot(mu1, "b-", label=r"$p(\theta_1)$")
-axs[0, 0].plot(mu2, "r-", label=r"$p(\theta_2)$", alpha=0.5)
-axs[0, 0].plot(mu3, "c-", label=r"$p(\theta_3)$")
-axs[0, 0].plot(mu4, "y-", label=r"$p(\theta_4)$")
+axs[0, 0].plot(mu0, "k-", label=r"$p_0$")
+axs[0, 0].plot(mu1, "b-", label=r"$p_1$")
+axs[0, 0].plot(mu2, "r-", label=r"$p_2$", alpha=0.5)
+axs[0, 0].plot(mu3, "c-", label=r"$p_3$")
+axs[0, 0].plot(mu4, "y-", label=r"$p_4$")
 axs[0, 0].set_xticks([0, 30, 60, 90, 120])
 axs[0, 0].set_xticklabels(['29-Feb',
                            '31-March',
@@ -386,7 +386,7 @@ axs[0,
               loc='best',
               fontsize='x-small',
               frameon=True,
-              title=r'$p(\theta_0)$',
+              title=r'$p_0$',
               title_fontsize='x-small')
 axs[1, 0].plot(data_plot.new_cases.values, "ko", mfc="none",
                ms=1.5, label="observed", alpha=0.5)
@@ -412,7 +412,7 @@ axs[1,
               loc='best',
               fontsize='x-small',
               frameon=True,
-              title=r'$p(\theta_1)$',
+              title=r'$p_1$',
               title_fontsize='x-small')
 axs[1, 0].plot(data_plot.new_cases.values, "ko", mfc="none",
                ms=1.5, label="observed", alpha=0.5)
@@ -450,7 +450,7 @@ axs[1,
               loc='best',
               fontsize='x-small',
               frameon=True,
-              title=r'$p(\theta_2)$',
+              title=r'$p_2$',
               title_fontsize='x-small')
 axs[2, 0].text(-15, 350, r"$\textbf{e}$", fontsize='14')
 axs[2, 0].set_ylim(0, 350)
@@ -485,7 +485,7 @@ axs[2,
               loc='best',
               fontsize='x-small',
               frameon=True,
-              title=r'$p(\theta_3)$',
+              title=r'$p_3$',
               title_fontsize='x-small')
 axs[2, 0].set_xlabel('Date', fontsize=10, x=1.1)
 axs[2, 1].text(-12, 350, r"$\textbf{f}$", fontsize='14')
@@ -521,7 +521,7 @@ axs[2,
               loc='best',
               fontsize='x-small',
               frameon=True,
-              title=r'$p(\theta_4)$',
+              title=r'$p_4$',
               title_fontsize='small')
 fig.set_figwidth(5.5)
 fig.set_figheight(5)
