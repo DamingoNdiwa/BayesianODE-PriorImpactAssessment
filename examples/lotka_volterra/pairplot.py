@@ -1,4 +1,3 @@
-
 from utils_lotka import hdi, post_samples
 import numpy as np
 import pandas as pd
@@ -8,6 +7,7 @@ from numpyro.examples.datasets import LYNXHARE, load_dataset
 import jax.numpy as jnp
 from jax.config import config
 config.update("jax_enable_x64", True)
+import scienceplots
 plt.style.use(['science', 'ieee'])
 # Get data from numpyro
 _, fetch = load_dataset(LYNXHARE, shuffle=False)
@@ -16,7 +16,7 @@ year, data = fetch()
 # Run model with three different priors for initial values and save the
 # results.
 # Stan prior
-num_results = 4000
+num_results = 3000
 num_burnin_steps = 2000
 key = 1
 
