@@ -197,15 +197,14 @@ def model():
 
 
 dist2 = tfd.JointDistributionCoroutineAutoBatched(model)
-jnp.save("./d2", d2, allow_pickle=True)
 
 # sample from prior
-
 d2_prior = dist2.sample(num_samples, seed=key)
 
 # save the prior in the form that can be used for Wasserstein distance
 # calculation by Ott
 d2 = np.column_stack((d2_prior.theta, d2_prior.z_init, d2_prior.sigma))
+jnp.save("./d2", d2, allow_pickle=True)
 
 # fourth  prior
 
