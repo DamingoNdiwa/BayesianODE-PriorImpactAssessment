@@ -3,7 +3,7 @@ This repository has code for the paper Prior impact assessment for dynamical sys
 ## examples
 The examples folder contains two subfolders: lotka_volterra and the SEIR.
 ### lotka_volterra
-The scripts `utils_lotka.py' and `utils_summary.py' contain helper functions. \\
+The scripts `utils_lotka.py' and `utils_summary.py' contain helper functions.\\
 The scripts 1.`wasser_exlot.py', 2.`wasser_dist_prior.py' and 3.`wasser_dist_ex.py' should be executed in that order.\\ 
 The scripts `lotka_priors_ppc.py' and `pairplot.py' can be executed at any time as they are standalone.
 
