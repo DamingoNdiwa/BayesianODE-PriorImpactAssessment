@@ -5,8 +5,8 @@ The examples folder contains two subfolders: lotka_volterra and the SEIR.
 ### lotka_volterra
 The scripts `utils_lotka.py` and `utils_summary.py` contain helper functions.<br>
 The scripts:<br>
-1. `wasser_exlot.py`
-2. `wasser_dist_prior.py`
+1. `wasser_exlot.py`<br>
+2. `wasser_dist_prior.py`<br>
 3. `wasser_dist_ex.py`<br>
 should be executed in that order.<br>
 The scripts `lotka_priors_ppc.py` and `pairplot.py` can be executed at any time as they are standalone.
