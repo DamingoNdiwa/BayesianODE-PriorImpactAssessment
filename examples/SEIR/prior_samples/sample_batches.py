@@ -22,9 +22,8 @@ def run_refd_prior_multiple_times(dist, num_samples=5, num_iterations=3):
         # Sample from prior
         refd_prior = dist.sample(num_samples, seed=subkey)
         Prior_samples = np.column_stack(
-            (refd_prior.theta,
-             refd_prior.p_reported,
-             refd_prior.alpha))
+            (refd_prior.theta, refd_prior.p_reported, refd_prior.alpha)
+        )
         # Save the results
         samples.append(Prior_samples)
     samples = np.concatenate(samples, axis=0)

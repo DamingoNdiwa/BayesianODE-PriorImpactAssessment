@@ -1,13 +1,11 @@
 import jax
 import jax.numpy as jnp
-import ott
 import numpy as np
 from utils_seir import post_samples, post_samples1
-import pandas as pd
 
 
-print(f'JAX host: {jax.process_index()} / {jax.process_count()}')
-print(f'JAX local devices: {jax.local_devices()}')
+print(f"JAX host: {jax.process_index()} / {jax.process_count()}")
+print(f"JAX local devices: {jax.local_devices()}")
 
 # Run model to get different posteriors for different prior
 # Baseline prior
@@ -39,8 +37,8 @@ pd3 = np.column_stack((gamma1.theta, gamma1.p_reported, gamma1.alpha))
 pd4 = np.column_stack((ex70.theta, ex70.p_reported, ex70.alpha))
 
 # Save posteriors
-jnp.save('./prefd', prefd, allow_pickle=True)
-jnp.save('./pd1', pd1, allow_pickle=True)
-jnp.save('./pd2', pd2, allow_pickle=True)
-jnp.save('./pd3', pd3, allow_pickle=True)
-jnp.save('./pd41', pd4, allow_pickle=True)
+jnp.save("./prefd", prefd, allow_pickle=True)
+jnp.save("./pd1", pd1, allow_pickle=True)
+jnp.save("./pd2", pd2, allow_pickle=True)
+jnp.save("./pd3", pd3, allow_pickle=True)
+jnp.save("./pd41", pd4, allow_pickle=True)
