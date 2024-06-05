@@ -11,7 +11,6 @@ The scripts:<br>
 should be executed in that order.<br>
 The scripts `lotka_priors_ppc.py` and `pairplot.py` can be executed at any time as they are standalone.
 
-The last two scripts to be executed should be  `wasser_dist_prior.py`  and  `wasser_exlot.py` in that order, as they use results from other scripts.
 ### SEIR
 This folder contains a subfolder called prior_samples and additional scripts. All of the scripts and the subfolder should be executed before running `wasser_results.py` and `wd_mar_ex.py`. 
 #### Prior_samples
