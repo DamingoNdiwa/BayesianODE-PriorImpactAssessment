@@ -1,14 +1,46 @@
-# BayesianODE-PriorImpactAssessment
-This repository has code for the paper Prior impact assessment for dynamical systems described by ordinary differential equations.
-## examples
-The examples folder contains two subfolders: lotka_volterra and the SEIR.
-### lotka_volterra
-The last two scripts to be executed should be  `wasser_dist_prior.py`  and  `wasser_exlot.py` in that order, as they use results from other scripts.
-### SEIR
-This folder contains a subfolder called prior_samples and additional scripts. All of the scripts and the subfolder should be executed before running `wasser_results.py` and `wd_mar_ex.py`. 
-#### Prior_samples
-The subfolder contains scripts for sampling from prior distributions. Running these scripts on the HPC is preferable as they take longer. OR use the script `sample_batches.py` for batch sampling to reduce execution time.
+# Wasserstein distance prior impact assessment for ODE models
 
-## Scripts
-The script `example_diagnostics.py` demonstrates how to perform Geweke diagnostics to check for model convergence. 
-The script requires uploading posterior samples and specifying the model (SEIR or Lotka-Volterra). Also, `utils_diagnostics.py` has a  function used by `example_diagnostics.py`.
+## Introduction
+
+This repository contains supporting code for the pre-print:
+
+Mingo, D. N., Hale, J. S. and Ley, C.,: Bayesian prior impact assessment for
+dynamical systems described by ordinary differential equations.
+
+The code is archived at:
+
+**TODO: Add link to Zenodo repository**
+
+The code in this repository is licensed under the GNU Lesser General Public
+License version 3 or later, see `COPYING` and `COPYING.LESSER`.
+
+## Examples
+
+### Lotka-Volterra
+
+Scripts to reproduce the results for the Lotka-Volterra example are contained
+in `examples/lotka_volterra`.
+
+1. 
+2.
+
+### SEIR
+
+Scripts to reproduce the results for the SEIR example are contained
+in `examples/SEIR`.
+
+1.
+2.
+
+#### Prior samples (SEIR)
+
+The subfolder `examples/SEIR/prior_samples` contains scripts for sampling from
+prior distributions. Running these scripts on an HPC is preferable as they take
+longer, or use the script `sample_batches.py` for batch sampling to reduce
+execution time.
+
+### Additional scripts
+
+The script `example_diagnostics.py` demonstrates how to perform Geweke
+diagnostics to check for model convergence. The script requires uploading
+posterior samples and specifying the model (SEIR or Lotka-Volterra). 
