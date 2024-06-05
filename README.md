@@ -7,6 +7,8 @@ This repository contains supporting code for the pre-print:
 Mingo, D. N., Hale, J. S. and Ley, C.,: Bayesian prior impact assessment for
 dynamical systems described by ordinary differential equations.
 
+**TODO: Add link to preprint**
+
 The code is archived at:
 
 **TODO: Add link to Zenodo repository**
