@@ -17,7 +17,7 @@ year, data = fetch()
 # results.
 # Stan prior
 num_results = 3000
-num_burnin_steps = 2000
+num_burnin_steps = 1000
 key = 1
 
 # Run function to get posterior smaples for three different sets of priors

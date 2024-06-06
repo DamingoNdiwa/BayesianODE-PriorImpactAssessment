@@ -23,8 +23,12 @@ License version 3 or later, see `COPYING` and `COPYING.LESSER`.
 Scripts to reproduce the results for the Lotka-Volterra example are contained
 in `examples/lotka_volterra`.
 
-1. 
-2.
+In order, execute:
+1. `wasser_exlot.py`
+2. `wasser_dist_prior.py`
+3. `wasser_dist_ex.py`
+The scripts `lotka_priors_ppc.py` and `pairplot.py` can be executed at any time
+as they are standalone.
 
 ### SEIR
 
