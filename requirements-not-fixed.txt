@@ -1,0 +1,11 @@
+jax
+jaxlib
+numpy
+ott-jax
+pandas
+SciencePlots
+seaborn
+tensorflow-probability
+matplotlib
+numpyro
+scipy
