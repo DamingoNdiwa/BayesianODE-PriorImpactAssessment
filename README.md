@@ -23,23 +23,24 @@ License version 3 or later, see `COPYING` and `COPYING.LESSER`.
 Scripts to reproduce the results for the Lotka-Volterra example are contained
 in `examples/lotka_volterra`.
 
-In order, execute:
+In order, run:
 1. `wasser_exlot.py`
 2. `wasser_dist_prior.py`
 3. `wasser_dist_ex.py`
-The scripts `lotka_priors_ppc.py` and `pairplot.py` can be executed at any time
-as they are standalone.
+
+The scripts `lotka_priors_ppc.py` and `pairplot.py` can be executed
+independently.
 
 ### SEIR
 
 Scripts to reproduce the results for the SEIR example are contained
 in `examples/SEIR`.
 
-1. Run all the files in the folder prior_samples 
-2. Then `run_seirpost.sh`  excutes `wasser_seir.py`
-and saves the samples.
+In order, run:
+1. All files in `prior_samples/`.
+2. `run_seirpost.sh` executes `wasser_seir.py` and saves the samples.
 3. `wasser_seir.py`  
-4. Lastly the `wd_mar_ex.py`
+4. `wd_mar_ex.py`
 
 #### Prior samples (SEIR)
 
