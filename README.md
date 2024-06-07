@@ -35,8 +35,11 @@ as they are standalone.
 Scripts to reproduce the results for the SEIR example are contained
 in `examples/SEIR`.
 
-1.
-2.
+1. Run all the files in the folder prior_samples 
+2. Then ``run_seirpost.sh'' excutes ``wasser_seir.py''
+and saves the samples.
+3. ``wasser_seir.py''  
+4. Lastly the ``wd_mar_ex.py''
 
 #### Prior samples (SEIR)
 
