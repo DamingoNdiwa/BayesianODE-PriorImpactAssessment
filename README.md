@@ -11,7 +11,7 @@ dynamical systems described by ordinary differential equations.
 
 The code is archived at:
 
-Damian N. Mingo, & Jack S. Hale.: Wasserstein distance prior impact assessment for ODE models, https://doi.org/10.5281/zenodo.11553775, 2024.
+Mingo, D. N. &  Hale, J. S .: Wasserstein distance prior impact assessment for ODE models, https://doi.org/10.5281/zenodo.11553775, 2024.
 
 The code in this repository is licensed under the GNU Lesser General Public
 License version 3 or later, see `COPYING` and `COPYING.LESSER`.
