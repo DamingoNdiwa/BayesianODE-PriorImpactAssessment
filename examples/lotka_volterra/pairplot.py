@@ -2,6 +2,7 @@ from utils_lotka import hdi, post_samples
 import numpy as np
 import pandas as pd
 import seaborn as sns
+import scienceplots
 import matplotlib.pyplot as plt
 from numpyro.examples.datasets import LYNXHARE, load_dataset
 import jax.numpy as jnp

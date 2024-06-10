@@ -4,6 +4,7 @@ from numpyro.examples.datasets import LYNXHARE, load_dataset
 from jax import random
 from jax.random import PRNGKey
 import jax.numpy as jnp
+import scienceplots
 from jax.config import config
 from utils_lotka import joint_pos, post_samples
 
@@ -16,7 +17,7 @@ year, data = fetch()
 # Run model with three different priors for initial values and save the
 # results.
 # Stan prior
-num_results = 3000
+num_results = 4000
 num_burnin_steps = 1000
 key = 1
 
