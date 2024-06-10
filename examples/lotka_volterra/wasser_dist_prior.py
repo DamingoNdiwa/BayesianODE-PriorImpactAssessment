@@ -398,3 +398,42 @@ print(
 print(
     f"\t The prior scaledWIM between baseline posterior and p4 posterior is: {WsIM04}"
 )
+
+# Compute distance between baseline prior and the other posteriors
+
+wp0p1_prior_post = compute_optimal_transport(refd, pd1)[1]
+wp0p2_prior_post = compute_optimal_transport(refd, pd2)[1]
+wp0p3_prior_post = compute_optimal_transport(refd, pd3)[1]
+wp0p4_prior_post = compute_optimal_transport(refd, pd4)[1]
+
+print(
+    f"\t The distance between baseline prior p0 and P1 posterior is: {wp0p1_prior_post}" 
+)
+print(
+    f"\t The distance between baseline prior p0 and P2 posterior is: {wp0p2_prior_post}"
+)
+print(
+    f"\t The distance between baseline prior p0 and P3 posterior is: {wp0p3_prior_post}"
+)
+print(
+    f"\t The distance between baseline prior p0 and P4 posterior is: {wp0p4_prior_post}"
+)
+
+# Compute distance between baseline posterior and the other priors
+wp0p1_post_prior = compute_optimal_transport(prefd, d1)[1]
+wp0p2_post_prior = compute_optimal_transport(prefd, d2)[1]
+wp0p3_post_prior = compute_optimal_transport(prefd, d3)[1]
+wp0p4_post_prior = compute_optimal_transport(prefd, d4)[1]
+
+print(
+    f"\t The distance between baseline posterior P0  and prior p1 is: {wp0p1_post_prior}"
+)
+print(
+    f"\t The distance between baseline posterior P0  and prior p2 is: {wp0p2_post_prior}"
+)
+print(
+    f"\t The distance between baseline posterior P0  and prior p3 is: {wp0p3_post_prior}"
+)
+print(
+    f"\t The distance between baseline posterior P0  and prior p4 is: {wp0p4_post_prior}"
+)
