@@ -55,4 +55,4 @@ The script `example_diagnostics.py` demonstrates how to perform Geweke
 diagnostics to check for model convergence. The script requires uploading
 posterior samples and specifying the model (SEIR or Lotka-Volterra). 
 
-[![DOI](https://zenodo.org/badge/605141673.svg)](https://zenodo.org/doi/10.5281/zenodo.10202092)
+[![DOI](https://zenodo.org/badge/744676127.svg)](https://zenodo.org/doi/10.5281/zenodo.11553774)
